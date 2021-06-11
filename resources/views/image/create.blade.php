@@ -1,0 +1,18 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    Go back to <a href="/albums" class="text-decoration-none">Album list</a>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Dashboard') }}</div>
+
+                <div class="card-body">
+                    <upload :album_id="{{ $album_id }}"></upload>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
